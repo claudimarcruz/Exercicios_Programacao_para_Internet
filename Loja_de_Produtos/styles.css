@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: aquamarine;
+    padding: 15px;
+    text-align: center;
+}
+
+.menu{
+    padding: 20 px;
+}
+
+.borda_fieldeset{
+    border-color: aquamarine;
+    size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 0.3rem ;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-auto-rows: minmax(100px, auto);
+  }
+
