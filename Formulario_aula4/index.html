@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script defer src="scripts.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+    <title>Formulário</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <p id="name"></p> 
+            <p>Por favor, preencha os campos abaixo e depois clique no botão Enviar. Caso necessite apagar os dados, dê um clique no botão Limpar.</p>
+            <p>Muito obrigado!</p>
+        </div>
+        <form action="mailto:teste@teste.com" id="form" class="form" method="post"  enctype="text/plain">
+            <div class="form-control">
+                <label for="username">Nome*:</label>
+                <input name="nome" type="text" id="username" placeholder="Digite seu nome de usuário..."/>
+            </div>
+
+            <div class="form-control">
+                <label for="email">E-mail*:</label>
+                <input name="email" type="text" id="email" placeholder="Digite seu e-mail..." />
+            </div>
+
+            <div class="check" id="radios">
+                <label>Sexo*:</label><br>
+                    <input type="radio" id="masculino" value="masculino" name="sexo">
+                    <label for="masculino">Masculino</label>
+                    <br>
+                    <input type="radio" id="feminino" value="feminino" name="sexo">
+                    <label for="feminino">Feminino</label>
+            </div>
+
+            <div class="check" id="estados">
+                <label>Estado Civil*:</label><br>
+                    <input type="radio" id="solteiro" value="solteiro" name="estado">
+                    <label for="solteiro">Solteiro</label>
+                    <br>
+                    <input type="radio" id="casado" value="casado" name="estado">
+                    <label for="casado">Casado</label>
+                    <br>
+                    <input type="radio" id="enrolado" value="enrolado" name="estado">
+                    <label for="enrolado">Enrolado</label>
+            </div>
+
+            <div class="check" id="posses">
+                <label>Bens que possui*:</label><br>
+                    <input type="checkbox" id="casa" value="casa" name="bens">
+                    <label for="casa">Casa</label>
+                    <br>
+                    <input type="checkbox" id="aut" value="aut" name="bens">
+                    <label for="aut">Automóvel</label>
+                    <br>
+                    <input type="checkbox" id="moto" value="moto" name="bens">
+                    <label for="moto">Moto</label>
+            </div>
+
+            <div class="check">
+                <label for="">Faixa de idade*:</label>
+                <select class="" name="idade" id="idade" >
+                    <option value="">Selecione</option>
+                    <option value="jovem">Jovem - até 19 anos</option>
+                    <option value="adulto">Adulto - 20 a 59 anos</option>
+                    <option value="idoso">Idoso - 60 anos em diante</option>
+                </select>
+            </div>
+
+        
+            <div class="check">
+                <label for="">Hobby preferido*:</label>
+                <select class="" name="pagamento" id="hobby" >
+                    <option value="">Selecione</option>
+                    <option value="leitura">Leitura</option>
+                    <option value="pesca">Pesca</option>
+                    <option value="espote">Esportes</option>
+                    <option value="filmes">Filmes</option>
+                    <option value="musica">Escutar música</option>
+                </select>
+            </div>
+            
+            <div class="check">
+                <label for="conteudo_id">Observações Gerais: </label>
+                <textarea id="conteudo_id" name="conteudo" cols="70" rows="8" maxlength="1000"></textarea>
+            </div>
+
+	        <button class="limpar" type="" onclick="limpaForm()">Limpar os dados</button>
+
+            <button id="msg" class="enviar" type="submit">Enviar os dados</button>
+
+            <div id="mensagem"></div>
+
+            <input type="hidden" name="_subject" value="Novo Cadastro!">
+            <input type="text" name="_honey" style="display: none">
+            <input type="hidden" name="_captcha" value="false">
+        </form>
+
+        
+    </div>
+    
+</body>
+</html>

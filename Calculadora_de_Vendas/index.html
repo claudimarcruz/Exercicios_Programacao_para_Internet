@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Calculadora_de_Vendas/styles.css">
+    <script src="scripts.js"></script>
+    <title>Calculadora de Vendas</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Calculadora de Vendas</h1>
+    </div>
+    
+    <div class="container">
+        <div class="box">
+
+            <label for="valor">Valor do Produto</label>
+            <input type="text" id="valor">
+
+            <label for="quantidade">Quantidade</label>
+            <input type="number" id="quantidade" min="0">
+
+            <select class="pag" name="pagamento" id="tipoPag" required="required">
+                <option value="">Escolha a forma de pagamento</option>
+                <option value="dinheiro">Dinheiro</option>
+                <option value="pix">Pix</option>
+                <option value="cartao">Cartão</option>
+            </select>
+            
+            <button onclick="calcular()" class="calcular" type="submit">Calcular</button>
+            
+            <h3>Total</h3>
+            <p id="resultado"></p>
+
+            <h3>Desconto</h3>
+            <p id="desconto"></p>
+
+
+        </div> 
+    </div>
+</body>
+</html>
