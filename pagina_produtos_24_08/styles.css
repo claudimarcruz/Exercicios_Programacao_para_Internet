@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: rgb(235, 232, 61);
+    border-radius: 10px;
+    box-shadow: 0 10px 5px rgb(62, 61, 63);
+    width: 600px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header {
+    background-color: black;
+    padding: 15px;
+}
+
+.form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.form-control label {
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.form-control input {
+    background-color: rgba(228, 233, 156, 0.5);
+    display: block;
+    border-radius: 10px;
+    font-size: 14px;
+    width: 100%;
+    padding: 10px;
+}
+
+
+.enviar {
+    background-color: rgba(226, 245, 232, 0.5);
+    border: 2px solid rgba(56, 107, 73, 0.5);
+    color: black;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.enviar:hover {
+    background-color:rgb(16, 182, 71);
+}
+
+
+.check {
+    width: 100%;
+    margin-top: 20px;
+}
+
+input[type="checkbox"]{
+    margin-left: 10px;
+    background-color: rgba(226, 234, 245, 0.5);
+    
+}
+
+.erro {
+    border: 1px solid red;
+}
+
+
+h1 {
+    text-align: center;
+    color: white;
+}
