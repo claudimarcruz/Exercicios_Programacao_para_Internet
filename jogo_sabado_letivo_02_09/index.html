@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styes.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 class="titulo">JOGO PEDRA, PAPEL E TESOURA</h1>
+    <h1>Escolha a sua opção:</h1>
+
+
+    <div class="container">
+        <div class="opcao">
+            <button onclick="insereOpcao('Pedra'); escolhaPc(); ganhadorJogo()">Pedra</button>
+            <button onclick="insereOpcao('Papel'); escolhaPc(); ganhadorJogo()">Papel</button>
+            <button onclick="insereOpcao('Tesoura'); escolhaPc(); ganhadorJogo()">Tesoura</button>
+        </div>
+    </div>
+        
+    <div class="texto">
+        <h1>Sua escolha:<p class="escolhido" id="escolha"></p></h1>
+        <h1>Escolha do computador:<p class="escolhido" id="escolhaComp"></p></h1>
+        <h1>Resultado:<p class="vencedor" id="venceJogo"></p></h1>
+    </div>
+    
+    
+    <script src="scripts.js"></script>
+</body>
+</html>

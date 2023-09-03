@@ -1,0 +1,55 @@
+* {
+    background-color: rgb(52, 124, 218);
+}
+
+h1 {
+    text-align: center;
+    color: azure;
+    font-size: 27px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.opcao {
+    width: 150px;
+    height: 150px;
+}
+
+.container {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.texto {
+    align-items: center;
+    justify-content: center;
+    
+}
+
+button {
+    width: 100%;
+    height: 35%;
+    font-size: 30px;
+    color: azure;
+    border-style: solid;
+    border-color: azure;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(183, 240, 99);
+    color: black;
+}
+
+.escolhido {
+    color: rgb(154, 240, 25);
+}
+
+.vencedor {
+    color: rgb(0, 37, 245);
+}
+
+.titulo {
+    color: rgb(154, 240, 25);
+    font-size: 30px;
+}
