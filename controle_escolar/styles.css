@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: brown;
+    padding: 15px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.borda_fieldset {
+    border-color: brown;
+    size: 2rem;
+    margin-bottom: 3rem;
+    margin-top: 0.3rem;
+}
+
+.bimestre {
+    max-width: 100%;
+    height: auto;
+    border-color: brown;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+}
+
+.center{
+    background-color: brown;
+    padding: 1px;
+    text-align: center;
+    color: aliceblue;
+}
+
+.disciplina{
+    background-color: brown;
+    padding: 1px;
+    text-align: left;
+    color: aliceblue;
+    margin-top: 20px;
+}
+
+.campo_result {
+    max-width: 100%;
+    height: auto;
+    border-color: brown;
+    border-width: 1px;
+    border-radius: 10px;
+    border-style: solid;
+    text-align: center;
+    margin: 5px;
+
+}
+
+.botao {
+    justify-content: center;
+    display: flex;
+    
+    
+    
+}
+
+button {
+    font-size: 18px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 50px;
+    height: 30px;
+    width: 200px;
+}
+
+button:hover {
+    background-color: brown;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+label {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.label_result {
+    font-size: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+input {
+    border-radius: 5px;
+    margin: 3px;
+    padding: 4px;
+}
